@@ -1,0 +1,26 @@
+Antoações aula de JS 
+
+developer.mozilla.org
+
+
+ecma-international.org
+
+Comando no node: 
+Uncaught SyntaxError: Unexpected number
+> var n1 = 1400.9 //define a variável
+undefined
+> n1 //consulta o valor 
+1400.9
+> n1.toFixed(2) // acrescenta mais um zero 
+'1400.90'
+> n1.toFixed(2).replace('.', ',') //Troca ponto por virgula 
+'1400,90'
+> n1.tolocaleString(pt-BR, {style: 'currency', currency:'BRL'}) //Mostra a geolocalização da moeda 
+Uncaught ReferenceError: pt is not defined
+> > n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+> n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+^
+
+Uncaught SyntaxError: Unexpected token '>'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency:'eur'})
+'€ 1.400,90'
